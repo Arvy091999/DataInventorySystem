@@ -1,0 +1,58 @@
+﻿@Model kineme
+@{ 
+    ViewData["Title"] = "Register a new Asset";
+}
+
+<div class="container">
+    <div class="page-header"><h2>Register a new Asset</h2></div>
+    <div class="row-text">
+        <div class="col-md-8 offset-2">
+            <div class="row">
+                <div class="col-md-4" style="text-align:right">
+                    <label>Asset Register No.:</label>
+                    <br />
+                    <label>Asset Name:</label>
+                    <br />
+                    <label>Department/Service:</label>
+                    <br />
+                    <label>Location:</label>
+                    <br />
+                    <label>Owner:</label>
+                    <br />
+                    <label>Administrator:</label>
+                    <br />
+                    <label>Classification:</label>
+                </div>
+                <div class="col-md-6">
+                    <label></label>
+                    <br />
+                    <input type="text" />
+                    <br />
+                    <input type="text" />
+                    <br />
+                    <input type="text" />
+                    <br />
+                    <select>Select Owner</select>
+                    <br />
+                    <select>Select Administrator</select>
+                    <br />
+                    <input type="text" />
+                </div>
+                <div class="col-md-4" style="float:right">
+                    <input type='button' value='Register' id='myButton' onClick='redirectOnClick()' />
+                    <script>
+function redirectOnClick(){
+    document.location = 'Registered';
+}
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div>
+
+</div>
+
+

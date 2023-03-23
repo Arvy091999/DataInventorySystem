@@ -1,0 +1,527 @@
+﻿@{ 
+    ViewData["Title"] = "Asset Registration";
+
+}
+<style>
+    /*.wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 70px 0;
+        max-width:1200px;
+        margin:auto;
+    }*/
+    .menu,
+    .content{
+        width:100%;
+    }
+    select{
+        width: 200px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 8px;
+        font-weight:400;
+    }
+    .content{
+        margin: 30px 0;
+    }
+    .content .data{
+        padding: 20px;
+        background-color: #9fd7ff;
+        border: 2px solid #23a3ff;
+        border-radius: 4px;
+    }
+    .data{
+        display:none;
+    }
+    .uneditable {
+        width:1000px;
+        padding-top:1px;
+        padding-bottom:1px;
+        font-size:13px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="page-header"><h2>Registered New Asset</h2></div>
+        <div class="row-text">
+            <div class="col-md-6">
+                <label></label>
+                <br />
+                <label>
+                    Asset Name:
+                </label>
+                <br />
+                <label>
+                    Add Types:
+                </label>
+            </div>
+            <div class="col-md-6">
+                <label>
+                    Date Registered:
+                    <label></label>
+                </label>
+                <br />
+                <label></label>
+                <br />
+                <div class="menu">
+                    <select id="classify">
+                        <option value="0">Select Classification</option>
+                        <option value="1"> System Application</option>
+                        <option value="2">Database</option>
+                        <option value="3">Hardware</option>
+                        <option value="4">Physical and Environmental</option>
+                        <option value="5">External Services</option>
+                        <option value="6">Others</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+
+        <div class="content">
+            <div id="0" class="data">
+                @*//blank*@
+            </div>
+            <div id="1" class="data">
+                <div style="height:10px;">
+                    <label style="font-size:20px;">System Application</label>
+                </div>
+                <div class="page-header" style="height:1px;">
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>System Name:</label>
+                            <br />
+                            <label>Purpose and Function:</label>
+                            <br />
+                            <label>Types of information stored:</label>
+                            <br />
+                            <label>How is it stored or managed?:</label>
+                            <br />
+                            <br />
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="radio" id="ppr" class="editable" style="font-size:13px;" /><label for="ppr">Paper</label>
+                            <input type="radio" id="elec" class="editable" style="font-size:13px;" /><label for="elec">Electronic</label>
+                            <br />
+                            <input type="text" class="uneditable" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+
+                            <label>Where is it Stored?:</label>
+                            <br />
+                            <label>Any other relevant information?:</label>
+                            <br />
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button class="alert-success" style="float:left;">Add</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>System Owner Details:</label>
+                            <br />
+                            <label>Contact No.:</label>
+                            <br />
+                            <label>Email:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="number" class="uneditable" />
+                            <br />
+                            <input type="email" class="uneditable" />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="2" class="data">
+                <div style="height:10px;">
+                    <label style="font-size:20px;">Database</label>
+                </div>
+                <div class="page-header" style="height:1px;">
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Database Name:</label>
+                            <br />
+                            <label>Purpose and Function:</label>
+                            <br />
+                            <label>Types of information stored:</label>
+                            <br />
+                            <label>How is it stored or managed?:</label>
+                            <br />
+                            <br />
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="radio" id="ppr" class="editable" style="font-size:13px;" /><label for="ppr">Paper</label>
+                            <input type="radio" id="elec" class="editable" style="font-size:13px;" /><label for="elec">Electronic</label>
+                            <br />
+                            <input type="text" class="uneditable" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+
+                            <label>Where is it Stored?:</label>
+                            <br />
+                            <label>Any other relevant information?:</label>
+                            <br />
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button class="alert-success" style="float:left;">Add</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>System Owner Details:</label>
+                            <br />
+                            <label>Contact No.:</label>
+                            <br />
+                            <label>Email:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="number" class="uneditable" />
+                            <br />
+                            <input type="email" class="uneditable" />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="3" class="data">
+                <div style="height:10px;">
+                    <label style="font-size:20px;">Hardware</label>
+                </div>
+                <div class="page-header" style="height:1px;">
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Hardware/Media Type:</label>
+                            <br />
+                            <label>Manufacturer/Vendor:</label>
+                            <br />
+                            <label>Model:</label>
+                            <br />
+                            <label>Location:</label>
+                            <br />
+                            <label>Business Justification for use:</label>
+                            <br />
+                            <label>Asset Number:</label>
+                            <br />
+                            <label>Serial/IMEI Number:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button class="alert-success" style="float:left;">Add</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <label>System Owner Details:</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Name:</label>
+                            <br />
+                            <label>Dept/Div/Group/Org:</label>
+                            <br />
+                           
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="uneditable" />
+                            <br />
+                            <input type="text" class="uneditable" />
+                            <br />
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="4" class="data">
+                <div style="height:10px;">
+                    <label style="font-size:20px;">Physical and Environmental</label>
+                </div>
+                <div class="page-header" style="height:1px;">
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Asset Type:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <select class="uneditable"></select>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Reference Numbers:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <input class="uneditable"/>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            
+                            <label>Remarks:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <textarea class="uneditable"></textarea>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button class="alert-success" style="float:left;">Add</button>
+                        </div>
+                    </div>
+                    <br />
+
+                </div>
+
+            </div>
+            <div id="5" class="data">
+                <div style="height:10px;">
+                    <label style="font-size:20px;">External Services</label>
+                </div>
+                <div class="page-header" style="height:1px;">
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>External Service:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <select class="uneditable"></select>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Remarks:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <textarea class="uneditable"></textarea>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+
+                            <label>Action Sort No.:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="search" class="uneditable"/>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button class="alert-success" style="float:left;">Add</button>
+                        </div>
+                    </div>
+                    <br />
+
+                </div>
+
+            </div>
+            <div id="6" class="data">
+                <div style="height:10px;">
+                    <label style="font-size:20px;">Others</label>
+                </div>
+                <div class="page-header" style="height:1px;">
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Asset Details:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <select class="uneditable"></select>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align:right;">
+                            <label>Remarks:</label>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <textarea class="uneditable"></textarea>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label hidden></label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button class="alert-success" style="float:left;">Add</button>
+                        </div>
+                    </div>
+                    <br />
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#classify").on('change', function () {
+                    $(".data").hide();
+                    $("#" + $(this).val()).fadeIn(700);
+                });
+            });
+        </script>
+    </div>
+
+</body>
+
+
+
